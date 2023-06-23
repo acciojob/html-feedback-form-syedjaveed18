@@ -8,10 +8,10 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form>
+	<form method="post">
 		<h1>Feedback Form</h1>
 		<label for="name" id="name">Name</label>
-		<input type="text" id="name" value="name" required>
+		<input type="text" id="name" value="name" minlength="3" maxlength="50" required>
 		<br>
 		<label for="protfolio" id="protfolio">Portfolio</label>
 		<input type="url" id="protfolio" required>
@@ -21,6 +21,8 @@
 		<br>
 		<label for="likeness">Color Likeness</label>
 		<input type="range" id="likeness" min="1" max="100">
+		<br>
+		<input type="submit" value=Submit>
 	</form>
     <script type="text/javascript" src="./script.js">
 </script>
